@@ -25,7 +25,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-to-b from-white to-sky-50">
+    <section id="contact" className="py-24 bg-linear-to-b from-white to-sky-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -42,7 +42,7 @@ export default function Contact() {
           <div className="space-y-8">
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center shrink-0">
                 <svg
                   className="w-6 h-6 text-sky-500"
                   fill="none"
@@ -58,7 +58,9 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">{t.contact.phone}</h3>
+                <h3 className="font-semibold text-gray-900">
+                  {t.contact.phone}
+                </h3>
                 <a
                   href="tel:+17035309100"
                   className="text-sky-500 hover:text-sky-600 text-lg font-medium"
@@ -70,7 +72,7 @@ export default function Contact() {
 
             {/* Email */}
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center shrink-0">
                 <svg
                   className="w-6 h-6 text-sky-500"
                   fill="none"
@@ -86,7 +88,9 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">{t.contact.email}</h3>
+                <h3 className="font-semibold text-gray-900">
+                  {t.contact.email}
+                </h3>
                 <a
                   href="mailto:info@pms-taxes.com"
                   className="text-sky-500 hover:text-sky-600 text-lg font-medium"
@@ -98,7 +102,7 @@ export default function Contact() {
 
             {/* Hours */}
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center shrink-0">
                 <svg
                   className="w-6 h-6 text-sky-500"
                   fill="none"
@@ -114,15 +118,19 @@ export default function Contact() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">{t.contact.hours}</h3>
-                <p className="text-gray-600 whitespace-pre-line">{t.contact.hoursValue}</p>
+                <h3 className="font-semibold text-gray-900">
+                  {t.contact.hours}
+                </h3>
+                <p className="text-gray-600 whitespace-pre-line">
+                  {t.contact.hoursValue}
+                </p>
               </div>
             </div>
 
             {/* Map placeholder */}
             <div className="mt-8 rounded-2xl overflow-hidden h-64 bg-gray-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.8!2d-77.1!3d38.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDUxJzAwLjAiTiA3N8KwMDYnMDAuMCJX!5e0!3m2!1sen!2sus!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.5!2d-77.4686!3d38.7509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b65d8a5e85e7c1%3A0x1234567890abcdef!2s9818%20Liberia%20Ave%2C%20Manassas%2C%20VA%2020110!5e0!3m2!1sen!2sus!4v1"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -148,7 +156,9 @@ export default function Contact() {
                   type="text"
                   id="name"
                   value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, name: e.target.value })
+                  }
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 transition-colors outline-none"
                   required
                 />
@@ -165,7 +175,9 @@ export default function Contact() {
                   type="email"
                   id="email"
                   value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, email: e.target.value })
+                  }
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 transition-colors outline-none"
                   required
                 />
@@ -182,7 +194,9 @@ export default function Contact() {
                   type="tel"
                   id="phone"
                   value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, phone: e.target.value })
+                  }
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 transition-colors outline-none"
                 />
               </div>
@@ -198,7 +212,9 @@ export default function Contact() {
                   id="message"
                   rows={4}
                   value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  onChange={(e) =>
+                    setFormData({ ...formData, message: e.target.value })
+                  }
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-sky-500 focus:ring-2 focus:ring-sky-200 transition-colors outline-none resize-none"
                   required
                 />

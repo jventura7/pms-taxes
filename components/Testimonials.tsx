@@ -5,7 +5,7 @@ import GoogleReviews from "./GoogleReviews";
 
 // Set your Featurable widget ID here after creating one at https://featurable.com
 // Example: const FEATURABLE_WIDGET_ID = "abc123def456";
-const FEATURABLE_WIDGET_ID = ""; // Leave empty to use static testimonials
+const FEATURABLE_WIDGET_ID = "21248c11-f624-47ec-8039-8478f6023f76";
 
 export default function Testimonials() {
   const { t } = useLanguage();

@@ -1,47 +1,44 @@
 "use client";
 
-import { ReactGoogleReviews } from "react-google-reviews";
-import "react-google-reviews/dist/index.css";
-import { useLanguage } from "@/lib/LanguageContext";
+import { useEffect, useRef } from "react";
 
 interface GoogleReviewsProps {
   featurableId?: string;
 }
 
 export default function GoogleReviews({ featurableId }: GoogleReviewsProps) {
-  const { t } = useLanguage();
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  // If no Featurable ID is provided, show instructions
+  useEffect(() => {
+    if (!featurableId || !containerRef.current) return;
+
+    // Load the Featurable script
+    const script = document.createElement("script");
+    script.src = "https://featurable.com/assets/v2/grid_default.min.js";
+    script.defer = true;
+    script.charset = "UTF-8";
+    containerRef.current.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      if (containerRef.current) {
+        const existingScript = containerRef.current.querySelector("script");
+        if (existingScript) {
+          containerRef.current.removeChild(existingScript);
+        }
+      }
+    };
+  }, [featurableId]);
+
   if (!featurableId) {
-    return (
-      <div className="bg-sky-50 border border-sky-200 rounded-xl p-6 text-center">
-        <p className="text-gray-600 mb-2">
-          {t.nav.contact === "Contact"
-            ? "To display live Google reviews, configure your Featurable widget ID."
-            : "Para mostrar resenas de Google en vivo, configure su ID de widget de Featurable."}
-        </p>
-        <a
-          href="https://featurable.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-sky-500 hover:text-sky-600 font-medium"
-        >
-          {t.nav.contact === "Contact"
-            ? "Get your free widget ID at Featurable.com"
-            : "Obtenga su ID de widget gratis en Featurable.com"}
-        </a>
-      </div>
-    );
+    return null;
   }
 
   return (
-    <div className="google-reviews-wrapper">
-      <ReactGoogleReviews
-        layout="carousel"
-        featurableId={featurableId}
-        theme="light"
-        maxCharacters={200}
-        structuredData={true}
+    <div ref={containerRef}>
+      <div
+        id={`featurable-${featurableId}`}
+        data-featurable-async=""
       />
     </div>
   );

@@ -10,11 +10,11 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { href: "#home", label: t.nav.home },
-    { href: "#services", label: t.nav.services },
-    { href: "#about", label: t.nav.about },
-    { href: "#testimonials", label: t.nav.testimonials },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/", label: t.nav.home },
+    { href: "/services", label: t.nav.services },
+    { href: "/about", label: t.nav.about },
+    { href: "/#testimonials", label: t.nav.testimonials },
+    { href: "/contact", label: t.nav.contact },
   ];
 
   return (
@@ -36,13 +36,13 @@ export default function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="text-gray-700 hover:text-sky-500 font-medium transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
@@ -69,12 +69,12 @@ export default function Header() {
                 {language === "en" ? "ES" : "EN"}
               </span>
             </button>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-full font-medium transition-colors"
             >
               {t.nav.contact}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -112,14 +112,14 @@ export default function Header() {
           <div className="md:hidden py-4 border-t border-gray-100">
             <nav className="flex flex-col gap-2">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-gray-700 hover:text-sky-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <button
                 onClick={() => setLanguage(language === "en" ? "es" : "en")}
