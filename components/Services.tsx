@@ -56,96 +56,46 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-            {t.services.title}
-          </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600">
-            {t.services.subtitle}
-          </p>
+    <section id="services" data-theme="light" className="panel py-24">
+      <div className="w-full px-4 sm:px-6 lg:px-10 space-y-16">
+        <div className="text-left space-y-4">
+          <p className="uppercase tracking-[0.4em] text-xs text-stone-500">Services</p>
+          <h2 className="text-4xl font-semibold text-stone-900">{t.services.title}</h2>
+          <p className="text-lg text-stone-600 max-w-2xl">{t.services.subtitle}</p>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={service.key}
-              className="group relative bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-100 hover:border-sky-200 hover:shadow-xl transition-all duration-300"
-            >
-              {/* Icon */}
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-sky-100 text-sky-500 mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
-                {service.icon}
+        <div className="grid md:grid-cols-2 gap-10">
+          {services.map((service) => (
+            <div key={service.key} className="space-y-5 border-b border-stone-200 pb-10">
+              <div className="flex items-center gap-4 text-stone-600">
+                <div className="w-14 h-14 rounded-full bg-stone-900/5 flex items-center justify-center text-stone-700">
+                  {service.icon}
+                </div>
+                <div>
+                  <p className="text-sm uppercase tracking-[0.3em] text-stone-500">0{service.key === "tax" ? 1 : service.key === "itin" ? 2 : service.key === "business" ? 3 : 4}</p>
+                  <h3 className="text-2xl font-semibold text-stone-900">{service.data.title}</h3>
+                </div>
               </div>
-
-              {/* Content */}
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
-                {service.data.title}
-              </h3>
-              <p className="text-gray-600 mb-6">{service.data.description}</p>
-
-              {/* Service Items */}
-              <ul className="space-y-3">
+              <p className="text-stone-600">{service.data.description}</p>
+              <ul className="space-y-2 text-stone-700">
                 {service.data.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-3">
-                    <svg
-                      className="w-5 h-5 text-sky-500 flex-shrink-0 mt-0.5"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="text-gray-700">{item}</span>
+                  <li key={itemIndex} className="flex items-center justify-between">
+                    <span>{item}</span>
+                    <span className="text-sm text-stone-400">→</span>
                   </li>
                 ))}
               </ul>
-
-              {/* Hover Arrow */}
-              <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                <svg
-                  className="w-6 h-6 text-sky-500"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </div>
             </div>
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-12">
+        <div>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-sky-500 hover:text-sky-600 font-semibold transition-colors"
+            className="inline-flex items-center gap-3 text-stone-900 font-medium"
           >
-            {t.nav.contact === "Contact" ? "Get a free consultation" : "Obtenga una consulta gratuita"}
-            <svg
-              className="w-5 h-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
+            {t.nav.contact === "Contact" ? "Looking for help? Contact us" : "Buscas ayuda? Contactanos"}
+            <span>↗</span>
           </a>
         </div>
       </div>

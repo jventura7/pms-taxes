@@ -9,7 +9,7 @@ export const translations = {
     },
     hero: {
       title: "Professional Tax & Business Services",
-      subtitle: "Fast processing, professional service, and honesty you can trust.",
+      subtitle: "PM Advisors brings 30+ years of trusted accounting, tax, and advisory services to individuals and businesses across DC, MD, and VA - helping you move forward with clarity, compliance, and confidence.",
       cta: "Get Started Today",
       ctaSecondary: "Our Services",
     },
