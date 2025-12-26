@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
+import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
@@ -69,12 +70,11 @@ export default function Header() {
                 {language === "en" ? "ES" : "EN"}
               </span>
             </button>
-            <Link
-              href="/contact"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-2.5 rounded-full font-medium transition-colors"
-            >
-              {t.nav.contact}
-            </Link>
+            <Button asChild>
+              <Link href="/contact">
+                {t.nav.contact}
+              </Link>
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}

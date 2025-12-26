@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/lib/LanguageContext";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Contact() {
   const { t } = useLanguage();
@@ -220,13 +221,10 @@ export default function Contact() {
                 />
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-sky-500 hover:bg-sky-600 text-white py-4 rounded-xl font-semibold transition-colors flex items-center justify-center gap-2"
-              >
+              <Button type="submit" size="lg" className="w-full py-4">
                 {t.contact.form.submit}
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -238,7 +236,7 @@ export default function Contact() {
                     d="M13 7l5 5m0 0l-5 5m5-5H6"
                   />
                 </svg>
-              </button>
+              </Button>
             </form>
           </div>
         </div>

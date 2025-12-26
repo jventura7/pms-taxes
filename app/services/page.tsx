@@ -1,6 +1,8 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const services = [
   {
@@ -275,22 +277,20 @@ export default function ServicesPage() {
                       : "Creemos en precios honestos y directos sin cargos ocultos. Contactenos para una consulta gratuita y cotizacion personalizada basada en sus necesidades especificas."}
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-                  <a
-                    href="tel:+17035309100"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-sky-500 text-white rounded-full font-semibold hover:bg-sky-600 transition-colors"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                    {isEnglish ? "Call Now" : "Llamar Ahora"}
-                  </a>
-                  <a
-                    href="/contact"
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-sky-500 text-sky-500 rounded-full font-semibold hover:bg-sky-50 transition-colors"
-                  >
-                    {isEnglish ? "Get a Quote" : "Obtener Cotizacion"}
-                  </a>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-end">
+                  <Button asChild size="lg">
+                    <Link href="tel:+17035309100">
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                      {isEnglish ? "Call Now" : "Llamar Ahora"}
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg">
+                    <Link href="/contact">
+                      {isEnglish ? "Get a Quote" : "Obtener Cotizacion"}
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -309,25 +309,23 @@ export default function ServicesPage() {
                   ? "Our friendly, bilingual staff is here to help you find the right services for your needs. Contact us today for a free consultation."
                   : "Nuestro personal amable y bilingue esta aqui para ayudarle a encontrar los servicios adecuados para sus necesidades. Contactenos hoy para una consulta gratuita."}
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="tel:+17035309100"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-sky-500 rounded-full font-semibold hover:bg-sky-50 transition-colors"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  (703) 530-9100
-                </a>
-                <a
-                  href="/contact"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-sky-600 text-white rounded-full font-semibold hover:bg-sky-700 transition-colors border border-sky-400"
-                >
-                  {isEnglish ? "Contact Us" : "Contactenos"}
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
-                </a>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button asChild variant="secondary" size="lg" className="bg-white text-sky-500 hover:bg-sky-50">
+                  <Link href="tel:+17035309100">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    (703) 530-9100
+                  </Link>
+                </Button>
+                <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-700 border border-sky-400">
+                  <Link href="/contact">
+                    {isEnglish ? "Contact Us" : "Contactenos"}
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
