@@ -64,7 +64,7 @@ const featureIcons = [
 ];
 
 const stats = [
-  { value: "15+", labelEn: "Years Experience", labelEs: "Años de Experiencia" },
+  { value: "20+", labelEn: "Years Experience", labelEs: "Años de Experiencia" },
   {
     value: "10,000+",
     labelEn: "Clients Served",

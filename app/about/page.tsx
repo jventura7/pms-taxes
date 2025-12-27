@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const stats = [
   {
-    value: "15+",
+    value: "20+",
     label: { en: "Years of Experience", es: "Años de Experiencia" },
   },
   {

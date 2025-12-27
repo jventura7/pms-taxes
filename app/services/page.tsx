@@ -301,7 +301,9 @@ export default function ServicesPage() {
               <div className="relative overflow-hidden shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80"
-                  alt={isEnglish ? "Professional advisor" : "Asesor profesional"}
+                  alt={
+                    isEnglish ? "Professional advisor" : "Asesor profesional"
+                  }
                   className="w-full h-[340px] lg:h-[400px] object-cover"
                 />
                 <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-primary" />
@@ -322,9 +324,7 @@ export default function ServicesPage() {
               {isEnglish ? "What We Offer" : "Lo Que Ofrecemos"}
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              {isEnglish
-                ? "Comprehensive Solutions"
-                : "Soluciones Integrales"}
+              {isEnglish ? "Comprehensive Solutions" : "Soluciones Integrales"}
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               {isEnglish
@@ -362,7 +362,9 @@ export default function ServicesPage() {
                 {/* Content */}
                 <div className="p-6">
                   <p className="text-gray-600 mb-5 text-sm leading-relaxed">
-                    {isEnglish ? service.description.en : service.description.es}
+                    {isEnglish
+                      ? service.description.en
+                      : service.description.es}
                   </p>
 
                   {/* Service Items */}
@@ -459,7 +461,10 @@ export default function ServicesPage() {
                   </svg>
                 ),
                 title: { en: "Bilingual Staff", es: "Personal Bilingüe" },
-                description: { en: "English & Spanish", es: "Inglés y Español" },
+                description: {
+                  en: "English & Spanish",
+                  es: "Inglés y Español",
+                },
               },
               {
                 icon: (
@@ -479,8 +484,8 @@ export default function ServicesPage() {
                 ),
                 title: { en: "Trusted Service", es: "Servicio Confiable" },
                 description: {
-                  en: "15+ years experience",
-                  es: "15+ años de experiencia",
+                  en: "20+ years experience",
+                  es: "20+ años de experiencia",
                 },
               },
               {

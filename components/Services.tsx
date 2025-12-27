@@ -229,7 +229,7 @@ export default function Services() {
                             ? "Years Experience"
                             : "Años de Experiencia"}
                         </p>
-                        <p className="text-white text-lg font-bold">15+</p>
+                        <p className="text-white text-lg font-bold">20+</p>
                       </div>
                     </div>
 
