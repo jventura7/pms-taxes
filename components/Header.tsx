@@ -25,7 +25,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between h-24 pb-4">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/" className="shrink-0">
             <Image
               src="/PMS-WEB-LOGO-1.gif"
               alt="Professional Multiservices LLC"

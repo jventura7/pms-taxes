@@ -1,11 +1,63 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+const heroImages = [
+  {
+    url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+    alt: {
+      en: "Tax documents and calculator",
+      es: "Documentos fiscales y calculadora",
+    },
+  },
+  {
+    url: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    alt: {
+      en: "Business professional signing documents",
+      es: "Profesional firmando documentos",
+    },
+  },
+  {
+    url: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80",
+    alt: { en: "Modern office space", es: "Espacio de oficina moderno" },
+  },
+  {
+    url: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=800&q=80",
+    alt: {
+      en: "Financial planning meeting",
+      es: "Reunión de planificación financiera",
+    },
+  },
+  {
+    url: "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?w=800&q=80",
+    alt: {
+      en: "Calculator and financial reports",
+      es: "Calculadora e informes financieros",
+    },
+  },
+];
+
 export default function Hero() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
+        setIsTransitioning(false);
+      }, 500);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const currentImage = heroImages[currentImageIndex];
 
   return (
     <section
@@ -21,7 +73,7 @@ export default function Hero() {
           {/* Left Column - Text Content */}
           <div className="order-2 lg:order-1">
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-[1.1] tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 mb-6 leading-[1.1] tracking-tight">
               {t.hero.title.split(" ").slice(0, 2).join(" ")}
               <span className="block text-primary italic">
                 {t.hero.title.split(" ").slice(2).join(" ")}
@@ -35,7 +87,7 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg">
+              <Button asChild>
                 <Link href="/contact">
                   {t.hero.cta}
                   <svg
@@ -53,53 +105,52 @@ export default function Hero() {
                   </svg>
                 </Link>
               </Button>
-              <Button asChild variant="secondary" size="lg">
+              <Button asChild variant="secondary">
                 <Link href="/services">{t.hero.ctaSecondary}</Link>
               </Button>
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-12 pt-8 border-t border-gray-200/60">
-              <div className="flex flex-wrap gap-x-10 gap-y-4">
-                <div>
-                  <div className="text-3xl font-bold text-gray-900">15+</div>
-                  <div className="text-sm text-gray-500">
-                    {t.nav.services === "Services" ? "Years" : "Años"}
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-gray-900">10,000+</div>
-                  <div className="text-sm text-gray-500">
-                    {t.nav.services === "Services" ? "Clients" : "Clientes"}
-                  </div>
-                </div>
-                <div>
-                  <div className="text-3xl font-bold text-gray-900 flex items-center gap-1">
-                    4.8
-                    <svg
-                      className="w-5 h-5 text-yellow-400"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  </div>
-                  <div className="text-sm text-gray-500">Google</div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          {/* Right Column - Image with Accent */}
+          {/* Right Column - Image Carousel with Accent */}
           <div className="order-1 lg:order-2 relative">
             <div className="relative">
-              {/* Main Image */}
-              <div className="relative z-10">
+              {/* Main Image with Fade Transition */}
+              <div className="relative z-10 overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80"
-                  alt={t.nav.services === "Services" ? "Modern office space" : "Espacio de oficina moderno"}
-                  className="w-full h-[300px] sm:h-[400px] lg:h-[480px] object-cover"
+                  src={currentImage.url}
+                  alt={
+                    language === "en"
+                      ? currentImage.alt.en
+                      : currentImage.alt.es
+                  }
+                  className={`w-full h-75 sm:h-100 lg:h-120 object-cover transition-opacity duration-500 ${
+                    isTransitioning ? "opacity-0" : "opacity-100"
+                  }`}
                 />
+              </div>
+
+              {/* Image Indicators */}
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+                {heroImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      setIsTransitioning(true);
+                      setTimeout(() => {
+                        setCurrentImageIndex(index);
+                        setIsTransitioning(false);
+                      }, 300);
+                    }}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentImageIndex
+                        ? "bg-white w-6"
+                        : "bg-white/50 hover:bg-white/75"
+                    }`}
+                    aria-label={`Go to image ${index + 1}`}
+                  />
+                ))}
               </div>
 
               {/* Decorative Blue Accent Block */}
