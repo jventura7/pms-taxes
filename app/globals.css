@@ -113,14 +113,14 @@ html {
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: hsl(51.43, 63.64%, 95.69%);
   --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --card: hsl(51.43, 63.64%, 95.69%)
   --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
+  --popover: hsl(51.43, 63.64%, 95.69%)
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.685 0.169 237.323);
-  --primary-foreground: oklch(1 0 0);
+  --primary-foreground: hsl(51.43, 63.64%, 95.69%)
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);

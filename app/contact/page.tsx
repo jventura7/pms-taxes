@@ -48,7 +48,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
@@ -64,7 +64,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -247,7 +247,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-gray-50 rounded-3xl p-8">
+            <div className="bg-background border border-gray-200 rounded-3xl p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">
                 {isEnglish ? "Send Us a Message" : "Envíenos un Mensaje"}
               </h2>
@@ -267,7 +267,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, name: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-background"
                       required
                     />
                   </div>
@@ -285,7 +285,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
                       }
-                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-white"
+                      className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-background"
                     />
                   </div>
                 </div>
@@ -304,7 +304,7 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-background"
                     required
                   />
                 </div>
@@ -322,7 +322,7 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, service: e.target.value })
                     }
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none bg-background"
                   >
                     <option value="">
                       {isEnglish ? "Select a service" : "Seleccione un servicio"}
@@ -349,7 +349,7 @@ export default function ContactPage() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none resize-none bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-colors outline-none resize-none bg-background"
                     required
                   />
                 </div>
@@ -377,7 +377,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">

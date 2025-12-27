@@ -12,18 +12,8 @@ export default function Hero() {
       id="home"
       className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
-      {/* Modern gradient background */}
-      <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-sky-50" />
-
-      {/* Subtle grid pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:48px_48px]" />
-
-      {/* Floating gradient orbs */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-sky-400/20 blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-sky-300/20  blur-3xl" />
-        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-sky-200/30 blur-3xl" />
-      </div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-background" />
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
         <div className="text-center">

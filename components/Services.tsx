@@ -56,7 +56,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-24 bg-white">
+    <section id="services" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -74,10 +74,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.key}
-              className="group relative bg-gradient-to-br from-gray-50 to-white p-8 border border-gray-100 hover:border-sky-200 hover:shadow-xl transition-all duration-300"
+              className="group relative bg-background p-8 border border-gray-100 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
             >
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-sky-100 text-sky-500 mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                 {service.icon}
               </div>
 
@@ -92,7 +92,7 @@ export default function Services() {
                 {service.data.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-sky-500 shrink-0 mt-0.5"
+                      className="w-5 h-5 text-primary shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -110,7 +110,7 @@ export default function Services() {
               {/* Hover Arrow */}
               <div className="absolute top-8 right-8 opacity-0 group-hover:opacity-100 transition-opacity">
                 <svg
-                  className="w-6 h-6 text-sky-500"
+                  className="w-6 h-6 text-primary"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -131,7 +131,7 @@ export default function Services() {
         <div className="text-center mt-12">
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-sky-500 hover:text-sky-600 font-semibold transition-colors"
+            className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
           >
             {t.nav.contact === "Contact" ? "Get a free consultation" : "Obtenga una consulta gratuita"}
             <svg

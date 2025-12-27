@@ -9,7 +9,7 @@ export default function Testimonials() {
   const { t } = useLanguage();
 
   return (
-    <section id="testimonials" className="py-24 bg-white">
+    <section id="testimonials" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -35,11 +35,11 @@ export default function Testimonials() {
                 ) => (
                   <div
                     key={index}
-                    className="relative bg-gray-50 p-8 hover:shadow-lg transition-shadow"
+                    className="relative bg-background border border-gray-100 p-8 hover:shadow-lg transition-shadow"
                   >
                     {/* Quote Icon */}
                     <div className="absolute -top-4 left-8">
-                      <div className="w-10 h-10 bg-sky-500 flex items-center justify-center">
+                      <div className="w-10 h-10 bg-primary flex items-center justify-center">
                         <svg
                           className="w-5 h-5 text-white"
                           fill="currentColor"
@@ -57,8 +57,8 @@ export default function Testimonials() {
 
                     {/* Author */}
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-sky-100 flex items-center justify-center">
-                        <span className="text-sky-500 font-bold text-lg">
+                      <div className="w-12 h-12 bg-primary/10 flex items-center justify-center">
+                        <span className="text-primary font-bold text-lg">
                           {testimonial.author.charAt(0)}
                         </span>
                       </div>
@@ -110,7 +110,7 @@ export default function Testimonials() {
               </div>
               <span className="text-2xl font-bold text-gray-900">4.8</span>
             </div>
-            <span className="text-gray-500 group-hover:text-sky-500 transition-colors flex items-center gap-1">
+            <span className="text-gray-500 group-hover:text-primary transition-colors flex items-center gap-1">
               {t.nav.contact === "Contact"
                 ? "See all 100+ reviews on Google"
                 : "Ver todas las 100+ resenas en Google"}

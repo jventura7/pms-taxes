@@ -121,7 +121,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden bg-slate-50">
+      <section className="relative py-24 overflow-hidden bg-background">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
@@ -138,7 +138,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white border-y border-gray-100">
+      <section className="py-16 bg-background border-y border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {stats.map((stat, index) => (
@@ -156,7 +156,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -221,7 +221,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-3">
@@ -240,7 +240,7 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-white p-6 border border-gray-100 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+                className="group bg-background p-6 border border-gray-200 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
@@ -258,7 +258,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden bg-primary">
             <div className="relative px-8 py-16 md:py-20 text-center">

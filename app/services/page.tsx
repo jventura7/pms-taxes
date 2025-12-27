@@ -206,7 +206,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white pt-16 md:pt-24">
+      <section className="bg-background pt-16 md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className= "shadow overflow-hidden">
             <div className="h-[340px] md:h-[420px]">
@@ -216,7 +216,7 @@ export default function ServicesPage() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="bg-[#f7f7f5] px-8 md:px-12 py-10">
+            <div className="bg-background px-8 md:px-12 py-10">
               <p className="uppercase tracking-[0.4em] text-xs text-cyan-600 mb-3">
                 {isEnglish ? "Capabilities" : "Capacidades"}
               </p>
@@ -234,13 +234,13 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group bg-white border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+                className="group bg-background border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -306,7 +306,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-slate-50">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-3">
@@ -357,7 +357,7 @@ export default function ServicesPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 border border-gray-100 text-center hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                className="bg-background p-6 border border-gray-100 text-center hover:shadow-lg hover:border-primary/20 transition-all duration-300"
               >
                 <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
                   {item.icon}
@@ -375,9 +375,9 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Note */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-50 p-8 md:p-12">
+          <div className="bg-background border border-gray-200 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -420,7 +420,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary p-8 md:p-12 text-center text-white">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">

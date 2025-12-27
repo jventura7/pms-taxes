@@ -43,7 +43,7 @@ export default function About() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-sky-50 to-white">
+    <section id="about" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -60,9 +60,9 @@ export default function About() {
           {t.about.features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="text-center p-6 bg-background border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 bg-sky-100 text-sky-500 mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 text-primary mb-4">
                 {featureIcons[index]}
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -74,19 +74,19 @@ export default function About() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 bg-sky-500 p-8 md:p-12 text-center text-white">
+        <div className="mt-16 bg-primary p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             {t.nav.contact === "Contact"
               ? "Ready to Get Started?"
               : "Listo para Comenzar?"}
           </h3>
-          <p className="text-sky-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-white/90 mb-8 max-w-2xl mx-auto">
             {t.nav.contact === "Contact"
               ? "Let us help you with your tax preparation, business services, and more. Contact us today for a free consultation."
               : "Permitanos ayudarle con su preparacion de impuestos, servicios empresariales y mas. Contactenos hoy para una consulta gratuita."}
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button asChild variant="secondary" size="lg" className="bg-white text-sky-500 hover:bg-sky-50">
+            <Button asChild variant="secondary" size="lg">
               <Link href="tel:+17035309100">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
@@ -99,7 +99,7 @@ export default function About() {
                 (703) 530-9100
               </Link>
             </Button>
-            <Button asChild size="lg" className="bg-sky-600 hover:bg-sky-700 border border-sky-400">
+            <Button asChild size="lg" className="bg-white/15 hover:bg-white/25 text-white border border-white/20">
               <Link href="#contact">
                 {t.nav.contact === "Contact" ? "Send a Message" : "Enviar un Mensaje"}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

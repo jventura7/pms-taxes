@@ -21,7 +21,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between h-24 pb-4">
           {/* Logo */}
@@ -128,7 +128,7 @@ export default function Header() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-gray-700 hover:text-sky-500 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-colors"
+                  className="text-gray-700 hover:text-primary font-medium py-2 px-4 rounded-lg hover:bg-primary/10 transition-colors"
                 >
                   {item.label}
                 </Link>
