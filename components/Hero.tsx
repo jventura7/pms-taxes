@@ -14,7 +14,7 @@ export default function Hero() {
     >
       {/* Background with subtle gradient */}
       <div className="absolute inset-0 bg-background" />
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10" />
+      <div className="absolute inset-0 from-primary/5 via-transparent to-primary/10" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 w-full">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
