@@ -25,13 +25,6 @@ const heroImages = [
     alt: { en: "Modern office space", es: "Espacio de oficina moderno" },
   },
   {
-    url: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=800&q=80",
-    alt: {
-      en: "Financial planning meeting",
-      es: "Reunión de planificación financiera",
-    },
-  },
-  {
     url: "https://images.unsplash.com/photo-1586486855514-8c633cc6fd38?w=800&q=80",
     alt: {
       en: "Calculator and financial reports",

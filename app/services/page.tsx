@@ -7,10 +7,21 @@ import Link from "next/link";
 const services = [
   {
     id: "tax",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z"
+        />
       </svg>
     ),
     title: { en: "Tax Preparation", es: "Preparación de Impuestos" },
@@ -39,10 +50,21 @@ const services = [
   },
   {
     id: "itin",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"
+        />
       </svg>
     ),
     title: { en: "ITIN Services", es: "Servicios de ITIN" },
@@ -71,10 +93,21 @@ const services = [
   },
   {
     id: "business",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+        />
       </svg>
     ),
     title: { en: "Business Services", es: "Servicios Empresariales" },
@@ -103,10 +136,21 @@ const services = [
   },
   {
     id: "notary",
-    image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+        />
       </svg>
     ),
     title: { en: "Notary Services", es: "Servicios de Notarización" },
@@ -135,10 +179,21 @@ const services = [
   },
   {
     id: "translation",
-    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+        />
       </svg>
     ),
     title: { en: "Translation Services", es: "Servicios de Traducción" },
@@ -167,10 +222,21 @@ const services = [
   },
   {
     id: "additional",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80",
     icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+      <svg
+        className="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={1.5}
+          d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+        />
       </svg>
     ),
     title: { en: "Additional Services", es: "Servicios Adicionales" },
@@ -206,41 +272,72 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-background pt-16 md:pt-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className= "shadow overflow-hidden">
-            <div className="h-[340px] md:h-[420px]">
-              <img
-                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80"
-                alt={isEnglish ? "Professional advisor" : "Asesor profesional"}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="bg-background px-8 md:px-12 py-10">
-              <p className="uppercase tracking-[0.4em] text-xs text-cyan-600 mb-3">
-                {isEnglish ? "Capabilities" : "Capacidades"}
-              </p>
-              <h1 className="text-4xl sm:text-5xl font-semibold text-[#111827] tracking-tight mb-4">
-                {isEnglish ? "Our Services" : "Nuestros Servicios"}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-background" />
+        <div className="absolute inset-0 bg-linear-to-br from-sky-200/40 via-transparent to-primary/10" />
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-linear-to-l from-sky-100/30 to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-4">
+                {isEnglish ? "Our Capabilities" : "Nuestras Capacidades"}
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+                {isEnglish ? "Professional " : "Servicios "}
+                <span className="text-primary">
+                  {isEnglish ? "Services" : "Profesionales"}
+                </span>
               </h1>
-              <p className="text-base md:text-lg text-[#4b5563] leading-relaxed">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-xl">
                 {isEnglish
                   ? "We work with individuals and businesses to solve industry-specific challenges—combining our expertise with a personal approach every step of the way."
                   : "Trabajamos con individuos y empresas para resolver desafíos específicos de la industria, combinando nuestra experiencia con un enfoque personal en cada paso."}
               </p>
+            </div>
+
+            <div className="relative">
+              <div className="absolute -inset-4 bg-linear-to-r from-primary/20 to-sky-500/20 blur-2xl" />
+              <div className="relative overflow-hidden shadow-2xl">
+                <img
+                  src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80"
+                  alt={isEnglish ? "Professional advisor" : "Asesor profesional"}
+                  className="w-full h-[340px] lg:h-[400px] object-cover"
+                />
+                <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-primary" />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-background" />
+        <div className="absolute inset-0 bg-linear-to-b from-sky-50/50 via-transparent to-sky-50/30" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-3">
+              {isEnglish ? "What We Offer" : "Lo Que Ofrecemos"}
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              {isEnglish
+                ? "Comprehensive Solutions"
+                : "Soluciones Integrales"}
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              {isEnglish
+                ? "From tax preparation to business formation, we offer a full range of services to meet your needs."
+                : "Desde preparación de impuestos hasta formación de empresas, ofrecemos una gama completa de servicios para satisfacer sus necesidades."}
+            </p>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group bg-background border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+                className="group relative bg-white/70 backdrop-blur-sm border border-gray-200/80 overflow-hidden hover:bg-white hover:shadow-xl hover:shadow-primary/5 hover:border-primary/20 transition-all duration-300"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -249,10 +346,10 @@ export default function ServicesPage() {
                     alt={isEnglish ? service.title.en : service.title.es}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center text-white">
+                      <div className="w-11 h-11 bg-white/20 backdrop-blur-sm flex items-center justify-center text-white group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                         {service.icon}
                       </div>
                       <h3 className="text-xl font-bold text-white">
@@ -306,31 +403,59 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-r from-primary via-sky-500 to-primary" />
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-size-[24px_24px]" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-3">
+            <span className="inline-block text-white/80 font-semibold text-sm tracking-wide uppercase mb-3">
               {isEnglish ? "Why Choose Us" : "Por Qué Elegirnos"}
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              {isEnglish ? "The Professional Difference" : "La Diferencia Profesional"}
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              {isEnglish
+                ? "The Professional Difference"
+                : "La Diferencia Profesional"}
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                 ),
                 title: { en: "Fast Processing", es: "Procesamiento Rápido" },
-                description: { en: "Quick turnaround times", es: "Tiempos de respuesta rápidos" },
+                description: {
+                  en: "Quick turnaround times",
+                  es: "Tiempos de respuesta rápidos",
+                },
               },
               {
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"
+                    />
                   </svg>
                 ),
                 title: { en: "Bilingual Staff", es: "Personal Bilingüe" },
@@ -338,34 +463,60 @@ export default function ServicesPage() {
               },
               {
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
                   </svg>
                 ),
                 title: { en: "Trusted Service", es: "Servicio Confiable" },
-                description: { en: "15+ years experience", es: "15+ años de experiencia" },
+                description: {
+                  en: "15+ years experience",
+                  es: "15+ años de experiencia",
+                },
               },
               {
                 icon: (
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1.5}
+                      d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
                   </svg>
                 ),
                 title: { en: "Fair Pricing", es: "Precios Justos" },
-                description: { en: "No hidden fees", es: "Sin cargos ocultos" },
+                description: {
+                  en: "No hidden fees",
+                  es: "Sin cargos ocultos",
+                },
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-background p-6 border border-gray-100 text-center hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                className="group bg-white/10 backdrop-blur-sm border border-white/20 p-6 text-center hover:bg-white/20 transition-all duration-300"
               >
-                <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <div className="w-14 h-14 bg-white/20 text-white flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                   {item.icon}
                 </div>
-                <h3 className="font-bold text-gray-900 mb-1">
+                <h3 className="font-bold text-white mb-1">
                   {isEnglish ? item.title.en : item.title.es}
                 </h3>
-                <p className="text-gray-500 text-sm">
+                <p className="text-white/80 text-sm">
                   {isEnglish ? item.description.en : item.description.es}
                 </p>
               </div>
@@ -375,22 +526,85 @@ export default function ServicesPage() {
       </section>
 
       {/* Pricing Note */}
-      <section className="py-16 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-background border border-gray-200 p-8 md:p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                  {isEnglish ? "Transparent Pricing" : "Precios Transparentes"}
-                </h2>
-                <p className="text-gray-600 leading-relaxed">
-                  {isEnglish
-                    ? "We believe in honest, upfront pricing with no hidden fees. Contact us for a free consultation and personalized quote based on your specific needs."
-                    : "Creemos en precios honestos y directos sin cargos ocultos. Contáctenos para una consulta gratuita y cotización personalizada basada en sus necesidades específicas."}
-                </p>
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0 bg-background" />
+        <div className="absolute inset-0 bg-linear-to-t from-sky-100/40 via-transparent to-transparent" />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative">
+            <div className="absolute -inset-2 bg-linear-to-r from-primary/10 to-sky-500/10 blur-2xl" />
+            <div className="relative bg-white/80 backdrop-blur-sm border border-gray-200 p-8 md:p-12">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-3">
+                    {isEnglish ? "Pricing" : "Precios"}
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                    {isEnglish
+                      ? "Transparent Pricing"
+                      : "Precios Transparentes"}
+                  </h2>
+                  <p className="text-gray-600 leading-relaxed">
+                    {isEnglish
+                      ? "We believe in honest, upfront pricing with no hidden fees. Contact us for a free consultation and personalized quote based on your specific needs."
+                      : "Creemos en precios honestos y directos sin cargos ocultos. Contáctenos para una consulta gratuita y cotización personalizada basada en sus necesidades específicas."}
+                  </p>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-end">
+                  <Button asChild size="lg">
+                    <Link href="tel:+17035309100">
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                        />
+                      </svg>
+                      {isEnglish ? "Call Now" : "Llamar Ahora"}
+                    </Link>
+                  </Button>
+                  <Button asChild variant="secondary" size="lg">
+                    <Link href="/contact">
+                      {isEnglish ? "Get a Quote" : "Obtener Cotización"}
+                    </Link>
+                  </Button>
+                </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-end">
-                <Button asChild size="lg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-24 bg-background">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative overflow-hidden">
+            <div className="absolute inset-0 bg-linear-to-r from-primary via-sky-500 to-primary" />
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-size-[24px_24px]" />
+
+            <div className="relative px-8 py-16 md:py-20 text-center">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
+                {isEnglish
+                  ? "Need Help Choosing a Service?"
+                  : "¿Necesita Ayuda para Elegir un Servicio?"}
+              </h2>
+              <p className="text-white/90 mb-8 max-w-2xl mx-auto text-lg">
+                {isEnglish
+                  ? "Our friendly, bilingual staff is here to help you find the right services for your needs. Contact us today for a free consultation."
+                  : "Nuestro personal amable y bilingüe está aquí para ayudarle a encontrar los servicios adecuados para sus necesidades. Contáctenos hoy para una consulta gratuita."}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-white text-primary hover:bg-white/90 shadow-lg"
+                >
                   <Link href="tel:+17035309100">
                     <svg
                       className="w-4 h-4"
@@ -405,75 +619,32 @@ export default function ServicesPage() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    {isEnglish ? "Call Now" : "Llamar Ahora"}
+                    (703) 530-9100
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-white/15 hover:bg-white/25 text-white border border-white/30 backdrop-blur-sm"
+                >
                   <Link href="/contact">
-                    {isEnglish ? "Get a Quote" : "Obtener Cotización"}
+                    {isEnglish ? "Contact Us" : "Contáctenos"}
+                    <svg
+                      className="w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </Link>
                 </Button>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-24 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary p-8 md:p-12 text-center text-white">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              {isEnglish
-                ? "Need Help Choosing a Service?"
-                : "¿Necesita Ayuda para Elegir un Servicio?"}
-            </h2>
-            <p className="text-white/90 mb-8 max-w-2xl mx-auto">
-              {isEnglish
-                ? "Our friendly, bilingual staff is here to help you find the right services for your needs. Contact us today for a free consultation."
-                : "Nuestro personal amable y bilingüe está aquí para ayudarle a encontrar los servicios adecuados para sus necesidades. Contáctenos hoy para una consulta gratuita."}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <Button asChild variant="secondary" size="lg">
-                <Link href="tel:+17035309100">
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
-                  (703) 530-9100
-                </Link>
-              </Button>
-              <Button
-                asChild
-                size="lg"
-                className="bg-white/15 hover:bg-white/25 text-white border border-white/20"
-              >
-                <Link href="/contact">
-                  {isEnglish ? "Contact Us" : "Contáctenos"}
-                  <svg
-                    className="w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 7l5 5m0 0l-5 5m5-5H6"
-                    />
-                  </svg>
-                </Link>
-              </Button>
             </div>
           </div>
         </div>

@@ -158,7 +158,6 @@ export default function Services() {
                         </div>
                       </div>
                     </div>
-
                   </div>
                 );
               })}
@@ -183,13 +182,16 @@ export default function Services() {
           </div>
 
           {/* Visual Section */}
-          <div className="lg:w-[60%] relative min-h-100 lg:min-h-150 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+          <div className="lg:w-[60%] relative min-h-100 lg:min-h-150 bg-linear-to-br from-gray-900 via-gray-800 to-gray-900">
             {/* Decorative Background Pattern */}
             <div className="absolute inset-0 opacity-10">
-              <div className="absolute inset-0" style={{
-                backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                                  radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 50%)`
-              }} />
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: `radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                                  radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05) 0%, transparent 50%)`,
+                }}
+              />
             </div>
 
             {/* Floating Card */}
@@ -234,7 +236,9 @@ export default function Services() {
                     {/* Highlights */}
                     <div className="bg-gray-800/80 rounded-lg p-4">
                       <p className="text-gray-400 text-xs mb-2">
-                        {t.nav.contact === "Contact" ? "Highlights" : "Destacados"}
+                        {t.nav.contact === "Contact"
+                          ? "Highlights"
+                          : "Destacados"}
                       </p>
                       <p className="text-gray-300 text-xs leading-relaxed">
                         {t.nav.contact === "Contact"

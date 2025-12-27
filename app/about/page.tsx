@@ -132,7 +132,7 @@ export default function AboutPage() {
             <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-4">
               {isEnglish ? "About Us" : "Sobre Nosotros"}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
               {isEnglish ? "About " : "Acerca de "}
               <span className="text-primary">Professional Multiservices</span>
             </h1>
@@ -148,7 +148,7 @@ export default function AboutPage() {
       {/* Stats Section */}
       <section className="relative py-16 overflow-hidden">
         <div className="absolute inset-0 bg-linear-to-r from-primary via-sky-500 to-primary" />
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-[length:24px_24px]" />
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-size-[24px_24px]" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -203,7 +203,7 @@ export default function AboutPage() {
                       ? "Professional handshake"
                       : "Apretón de manos profesional"
                   }
-                  className="w-full h-[400px] object-cover shadow-2xl"
+                  className="w-full h-100 object-cover shadow-2xl"
                 />
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary/10 -z-10" />
@@ -247,7 +247,7 @@ export default function AboutPage() {
                     key={index}
                     className="relative pl-8 border-l-2 border-primary/20"
                   >
-                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-linear-to-br from-primary to-sky-500" />
+                    <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-linear-to-br from-primary to-sky-500" />
                     <span className="inline-block text-primary font-bold text-sm mb-1">
                       {item.year}
                     </span>
@@ -350,7 +350,7 @@ export default function AboutPage() {
                 alt={
                   isEnglish ? "Our team at work" : "Nuestro equipo trabajando"
                 }
-                className="relative w-full h-[400px] object-cover shadow-2xl"
+                className="relative w-full h-100 object-cover shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary" />
             </div>
@@ -411,7 +411,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden">
             <div className="absolute inset-0 bg-linear-to-r from-primary via-sky-500 to-primary" />
-            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-[length:24px_24px]" />
+            <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_1px_1px,white_1px,transparent_1px)] bg-size-[24px_24px]" />
 
             <div className="relative px-8 py-16 md:py-20 text-center">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">

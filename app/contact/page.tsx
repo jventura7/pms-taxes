@@ -138,7 +138,7 @@ export default function ContactPage() {
             <span className="inline-block text-primary font-semibold text-sm tracking-wide uppercase mb-4">
               {isEnglish ? "Get in Touch" : "Contáctenos"}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
               {isEnglish ? "Contact " : "Contacte a "}
               <span className="text-primary">Professional Multiservices</span>
             </h1>
