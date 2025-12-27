@@ -8,8 +8,8 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      title: "Professional Tax & Business Services",
-      subtitle: "Fast processing, professional service, and honesty you can trust.",
+      title: "Expertise That Moves You Forward.",
+      subtitle: "Running a business is hard enough. We take the tax, accounting, and compliance work off your plate for good.",
       cta: "Get Started Today",
       ctaSecondary: "Our Services",
     },

@@ -13,29 +13,20 @@ export default function Hero() {
       className="relative min-h-[90vh] flex items-center justify-center overflow-hidden"
     >
       {/* Modern gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-sky-50" />
+      <div className="absolute inset-0 bg-linear-to-br from-slate-50 via-white to-sky-50" />
 
       {/* Subtle grid pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:48px_48px]" />
 
       {/* Floating gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-sky-400/20 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-sky-300/20 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-sky-200/30 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-sky-400/20 blur-3xl" />
+        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-sky-300/20  blur-3xl" />
+        <div className="absolute -bottom-40 right-1/3 w-80 h-80 bg-sky-200/30 blur-3xl" />
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
         <div className="text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-100/80 text-sky-700 text-sm font-medium mb-8 backdrop-blur-sm border border-sky-200/50">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
-            </span>
-            Professional Multiservices LLC
-          </div>
-
           {/* Main Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-[1.1] tracking-tight">
             {t.hero.title.split(" ").slice(0, 2).join(" ")}

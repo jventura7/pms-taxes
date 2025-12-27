@@ -60,9 +60,9 @@ export default function About() {
           {t.about.features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow"
+              className="text-center p-6 bg-white shadow-sm hover:shadow-md transition-shadow"
             >
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-sky-100 text-sky-500 mb-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-sky-100 text-sky-500 mb-4">
                 {featureIcons[index]}
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -74,7 +74,7 @@ export default function About() {
         </div>
 
         {/* Additional Info */}
-        <div className="mt-16 bg-sky-500 rounded-3xl p-8 md:p-12 text-center text-white">
+        <div className="mt-16 bg-sky-500 p-8 md:p-12 text-center text-white">
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             {t.nav.contact === "Contact"
               ? "Ready to Get Started?"

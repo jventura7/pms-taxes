@@ -206,36 +206,29 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="py-24 bg-slate-50">
+      <section className="bg-white pt-16 md:pt-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                />
-              </svg>
-              {isEnglish ? "Full-Service Solutions" : "Soluciones de Servicio Completo"}
+          <div className= "shadow overflow-hidden">
+            <div className="h-[340px] md:h-[420px]">
+              <img
+                src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?w=1200&q=80"
+                alt={isEnglish ? "Professional advisor" : "Asesor profesional"}
+                className="w-full h-full object-cover"
+              />
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-              {isEnglish ? "Our " : "Nuestros "}
-              <span className="text-primary">
-                {isEnglish ? "Services" : "Servicios"}
-              </span>
-            </h1>
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-              {isEnglish
-                ? "Comprehensive tax, business, and document services to meet all your needs. Professional, fast, and affordable."
-                : "Servicios integrales de impuestos, negocios y documentos para satisfacer todas sus necesidades. Profesional, rápido y asequible."}
-            </p>
+            <div className="bg-[#f7f7f5] px-8 md:px-12 py-10">
+              <p className="uppercase tracking-[0.4em] text-xs text-cyan-600 mb-3">
+                {isEnglish ? "Capabilities" : "Capacidades"}
+              </p>
+              <h1 className="text-4xl sm:text-5xl font-semibold text-[#111827] tracking-tight mb-4">
+                {isEnglish ? "Our Services" : "Nuestros Servicios"}
+              </h1>
+              <p className="text-base md:text-lg text-[#4b5563] leading-relaxed">
+                {isEnglish
+                  ? "We work with individuals and businesses to solve industry-specific challenges—combining our expertise with a personal approach every step of the way."
+                  : "Trabajamos con individuos y empresas para resolver desafíos específicos de la industria, combinando nuestra experiencia con un enfoque personal en cada paso."}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -247,7 +240,7 @@ export default function ServicesPage() {
             {services.map((service) => (
               <div
                 key={service.id}
-                className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
+                className="group bg-white border border-gray-100 overflow-hidden hover:shadow-xl hover:border-primary/20 transition-all duration-300"
               >
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
@@ -364,9 +357,9 @@ export default function ServicesPage() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl border border-gray-100 text-center hover:shadow-lg hover:border-primary/20 transition-all duration-300"
+                className="bg-white p-6 border border-gray-100 text-center hover:shadow-lg hover:border-primary/20 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
                   {item.icon}
                 </div>
                 <h3 className="font-bold text-gray-900 mb-1">
@@ -384,7 +377,7 @@ export default function ServicesPage() {
       {/* Pricing Note */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-slate-50 rounded-3xl p-8 md:p-12">
+          <div className="bg-slate-50 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -429,7 +422,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary rounded-3xl p-8 md:p-12 text-center text-white">
+          <div className="bg-primary p-8 md:p-12 text-center text-white">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
               {isEnglish
                 ? "Need Help Choosing a Service?"

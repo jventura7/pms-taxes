@@ -43,7 +43,7 @@ export default function Contact() {
           <div className="space-y-8">
             {/* Phone */}
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 bg-sky-100 flex items-center justify-center shrink-0">
                 <svg
                   className="w-6 h-6 text-sky-500"
                   fill="none"

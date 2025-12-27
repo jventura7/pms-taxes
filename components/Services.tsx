@@ -58,6 +58,7 @@ export default function Services() {
   return (
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -73,10 +74,10 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.key}
-              className="group relative bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl border border-gray-100 hover:border-sky-200 hover:shadow-xl transition-all duration-300"
+              className="group relative bg-gradient-to-br from-gray-50 to-white p-8 border border-gray-100 hover:border-sky-200 hover:shadow-xl transition-all duration-300"
             >
               {/* Icon */}
-              <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-sky-100 text-sky-500 mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+              <div className="inline-flex items-center justify-center w-14 h-14 bg-sky-100 text-sky-500 mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
                 {service.icon}
               </div>
 
@@ -91,7 +92,7 @@ export default function Services() {
                 {service.data.items.map((item, itemIndex) => (
                   <li key={itemIndex} className="flex items-start gap-3">
                     <svg
-                      className="w-5 h-5 text-sky-500 flex-shrink-0 mt-0.5"
+                      className="w-5 h-5 text-sky-500 shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

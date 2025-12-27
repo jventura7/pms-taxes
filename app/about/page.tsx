@@ -124,22 +124,6 @@ export default function AboutPage() {
       <section className="relative py-24 overflow-hidden bg-slate-50">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                />
-              </svg>
-              {isEnglish ? "Est. 2009" : "Est. 2009"}
-            </div>
             <h1 className="text-4xl sm:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
               {isEnglish ? "About " : "Acerca de "}
               <span className="text-primary">Professional Multiservices</span>
@@ -203,10 +187,10 @@ export default function AboutPage() {
 
             {/* Mission Card */}
             <div className="relative">
-              <div className="absolute inset-0 bg-primary rounded-3xl transform rotate-1" />
-              <div className="relative bg-primary rounded-3xl p-8 lg:p-10 text-white shadow-xl shadow-primary/20">
+              <div className="absolute inset-0 bg-primary transform rotate-1" />
+              <div className="relative bg-primary p-8 lg:p-10 text-white shadow-xl shadow-primary/20">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+                  <div className="w-10 h-10 bg-white/20 flex items-center justify-center">
                     <svg
                       className="w-5 h-5"
                       fill="none"
@@ -256,9 +240,9 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-white p-6 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
+                className="group bg-white p-6 border border-gray-100 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 transition-all duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-12 h-12 bg-primary/10 text-primary flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">
@@ -276,7 +260,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative overflow-hidden rounded-3xl bg-primary">
+          <div className="relative overflow-hidden bg-primary">
             <div className="relative px-8 py-16 md:py-20 text-center">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
                 {isEnglish

@@ -3,12 +3,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { useLanguage } from "@/lib/LanguageContext";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const navItems = [
     { href: "/", label: t.nav.home },
@@ -21,7 +23,7 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-end justify-between h-24 pb-4">
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -35,23 +37,35 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="text-gray-700 hover:text-sky-500 font-medium transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
+          <nav className="hidden md:flex items-baseline gap-10 text-sm font-medium">
+            {navItems.map((item) => {
+              const isActive =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group relative pb-3 text-gray-800 hover:text-black transition-colors"
+                >
+                  {item.label}
+                  <span
+                    className={`absolute left-0 right-0 -bottom-1 h-1 transition-colors ${
+                      isActive ? "bg-sky-500" : "bg-transparent"
+                    }`}
+                  />
+                  <span className="absolute left-0 right-0 -bottom-1 h-1 bg-black opacity-0 group-hover:opacity-100 transition-opacity" />
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Language Switcher & CTA */}
           <div className="hidden md:flex items-center gap-4">
             <button
               onClick={() => setLanguage(language === "en" ? "es" : "en")}
-              className="flex items-center gap-2 px-3 py-2 rounded-full border border-gray-200 hover:border-sky-500 transition-colors"
+              className="flex items-center gap-2 px-3 py-2 border border-gray-200 hover:border-sky-500 transition-colors"
             >
               <svg
                 className="w-5 h-5 text-gray-600"
@@ -71,9 +85,7 @@ export default function Header() {
               </span>
             </button>
             <Button asChild>
-              <Link href="/contact">
-                {t.nav.contact}
-              </Link>
+              <Link href="/contact">{t.nav.contact}</Link>
             </Button>
           </div>
 
