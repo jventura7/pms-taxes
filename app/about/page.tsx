@@ -198,7 +198,11 @@ export default function AboutPage() {
               <div className="relative">
                 <img
                   src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80"
-                  alt={isEnglish ? "Professional handshake" : "Apretón de manos profesional"}
+                  alt={
+                    isEnglish
+                      ? "Professional handshake"
+                      : "Apretón de manos profesional"
+                  }
                   className="w-full h-[400px] object-cover shadow-2xl"
                 />
                 {/* Decorative elements */}
@@ -215,25 +219,34 @@ export default function AboutPage() {
                     year: "2009",
                     titleEn: "The Beginning",
                     titleEs: "El Comienzo",
-                    descEn: "Professional Multiservices LLC was founded with a simple mission: to provide our community with reliable, affordable, and professional tax and business services.",
-                    descEs: "Professional Multiservices LLC fue fundada con una misión simple: proporcionar a nuestra comunidad servicios fiscales y empresariales confiables, asequibles y profesionales.",
+                    descEn:
+                      "Professional Multiservices LLC was founded with a simple mission: to provide our community with reliable, affordable, and professional tax and business services.",
+                    descEs:
+                      "Professional Multiservices LLC fue fundada con una misión simple: proporcionar a nuestra comunidad servicios fiscales y empresariales confiables, asequibles y profesionales.",
                   },
                   {
                     year: "2015",
                     titleEn: "Expanding Services",
                     titleEs: "Expandiendo Servicios",
-                    descEn: "What started as a small tax preparation office grew into a full-service business center, offering everything from ITIN applications to bookkeeping and notarization.",
-                    descEs: "Lo que comenzó como una pequeña oficina de preparación de impuestos se convirtió en un centro de negocios completo.",
+                    descEn:
+                      "What started as a small tax preparation office grew into a full-service business center, offering everything from ITIN applications to bookkeeping and notarization.",
+                    descEs:
+                      "Lo que comenzó como una pequeña oficina de preparación de impuestos se convirtió en un centro de negocios completo.",
                   },
                   {
                     year: "Today",
                     titleEn: "Community Leader",
                     titleEs: "Líder Comunitario",
-                    descEn: "We're proud to serve our diverse community with bilingual staff who understand the unique needs of our clients.",
-                    descEs: "Estamos orgullosos de servir a nuestra diversa comunidad con personal bilingüe que entiende las necesidades únicas de nuestros clientes.",
+                    descEn:
+                      "We're proud to serve our diverse community with bilingual staff who understand the unique needs of our clients.",
+                    descEs:
+                      "Estamos orgullosos de servir a nuestra diversa comunidad con personal bilingüe que entiende las necesidades únicas de nuestros clientes.",
                   },
                 ].map((item, index) => (
-                  <div key={index} className="relative pl-8 border-l-2 border-primary/20">
+                  <div
+                    key={index}
+                    className="relative pl-8 border-l-2 border-primary/20"
+                  >
                     <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-linear-to-br from-primary to-sky-500" />
                     <span className="inline-block text-primary font-bold text-sm mb-1">
                       {item.year}
@@ -334,7 +347,9 @@ export default function AboutPage() {
               <div className="absolute -inset-4 bg-linear-to-r from-primary/20 to-sky-500/20 blur-2xl opacity-50" />
               <img
                 src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
-                alt={isEnglish ? "Our team at work" : "Nuestro equipo trabajando"}
+                alt={
+                  isEnglish ? "Our team at work" : "Nuestro equipo trabajando"
+                }
                 className="relative w-full h-[400px] object-cover shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary" />
@@ -345,9 +360,7 @@ export default function AboutPage() {
                 {isEnglish ? "Why Choose Us" : "Por Qué Elegirnos"}
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                {isEnglish
-                  ? "Your Trusted Partner"
-                  : "Su Socio de Confianza"}
+                {isEnglish ? "Your Trusted Partner" : "Su Socio de Confianza"}
               </h2>
               <div className="space-y-4">
                 {[
