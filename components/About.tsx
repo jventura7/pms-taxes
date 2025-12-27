@@ -5,7 +5,13 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const featureIcons = [
-  <svg key="fast" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg
+    key="fast"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -13,7 +19,13 @@ const featureIcons = [
       d="M13 10V3L4 14h7v7l9-11h-7z"
     />
   </svg>,
-  <svg key="professional" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg
+    key="professional"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -21,7 +33,13 @@ const featureIcons = [
       d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
     />
   </svg>,
-  <svg key="honest" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg
+    key="honest"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -29,7 +47,13 @@ const featureIcons = [
       d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
     />
   </svg>,
-  <svg key="bilingual" className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg
+    key="bilingual"
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -60,7 +84,7 @@ export default function About() {
           {t.about.features.map((feature, index) => (
             <div
               key={index}
-              className="text-center p-6 bg-background border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+              className="text-center p-6 bg-background border border-gray-300 hover:shadow-md transition-shadow"
             >
               <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 text-primary mb-4">
                 {featureIcons[index]}
@@ -88,7 +112,12 @@ export default function About() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button asChild variant="secondary" size="lg">
               <Link href="tel:+17035309100">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -99,10 +128,21 @@ export default function About() {
                 (703) 530-9100
               </Link>
             </Button>
-            <Button asChild size="lg" className="bg-white/15 hover:bg-white/25 text-white border border-white/20">
+            <Button
+              asChild
+              size="lg"
+              className="bg-white/15 hover:bg-white/25 text-white border border-white/20"
+            >
               <Link href="#contact">
-                {t.nav.contact === "Contact" ? "Send a Message" : "Enviar un Mensaje"}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {t.nav.contact === "Contact"
+                  ? "Send a Message"
+                  : "Enviar un Mensaje"}
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

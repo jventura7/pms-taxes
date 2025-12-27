@@ -4,7 +4,12 @@ import { useLanguage } from "@/lib/LanguageContext";
 
 const serviceIcons = {
   tax: (
-    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg
+      className="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -14,7 +19,12 @@ const serviceIcons = {
     </svg>
   ),
   itin: (
-    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg
+      className="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -24,7 +34,12 @@ const serviceIcons = {
     </svg>
   ),
   business: (
-    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg
+      className="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -34,7 +49,12 @@ const serviceIcons = {
     </svg>
   ),
   additional: (
-    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg
+      className="w-8 h-8"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
@@ -52,13 +72,16 @@ export default function Services() {
     { key: "tax", icon: serviceIcons.tax, data: t.services.tax },
     { key: "itin", icon: serviceIcons.itin, data: t.services.itin },
     { key: "business", icon: serviceIcons.business, data: t.services.business },
-    { key: "additional", icon: serviceIcons.additional, data: t.services.additional },
+    {
+      key: "additional",
+      icon: serviceIcons.additional,
+      data: t.services.additional,
+    },
   ];
 
   return (
     <section id="services" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -74,7 +97,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={service.key}
-              className="group relative bg-background p-8 border border-gray-100 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
+              className="group relative bg-background p-8 border border-gray-300 hover:border-primary/30 hover:shadow-xl transition-all duration-300"
             >
               {/* Icon */}
               <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
@@ -133,7 +156,9 @@ export default function Services() {
             href="#contact"
             className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
           >
-            {t.nav.contact === "Contact" ? "Get a free consultation" : "Obtenga una consulta gratuita"}
+            {t.nav.contact === "Contact"
+              ? "Get a free consultation"
+              : "Obtenga una consulta gratuita"}
             <svg
               className="w-5 h-5"
               fill="none"
